@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" >
+  <meta name="description" content="Job application page." >
+  <meta name="keywords" content="Job" >
+  <meta name="author" content="Some Company"  >
+  <title>Nameless Company</title>
+
+</head>
+
+<body>
+    <h1>Title</h1>
+    <p>A paragraph</p>
+
+<form method="post" action="https://mercury.swin.edu.au/it000000/formtest.php">
+    <fieldset>
+        <legend>Section 1</legend>
+        <p>
+            <label for="job_reference_number">Job reference number</label>
+            <input
+                type="text"
+                name="job_reference_number"
+                id="job_reference_number"
+                size="5"
+                required="required"
+                pattern="[0-9]{5}"
+    			title="Enter exactly 5 alphanumeric characters"
+            >
+        </p>
+
+        <p>
+            <label for="first_name">First Name</label>
+            <input
+                type="text"
+                name="first_name"
+                id="first_name"
+                size="20"
+                required="required"
+                pattern="[a-zA-Z]{1,20}"
+    			title="Enter at most 20 alpha characters"
+            >
+
+            <label for="last_name">Last Name</label>
+            <input
+                type="text"
+                name="last_name"
+                id="last_name"
+                size="20"
+                required="required"
+                pattern="[a-zA-Z]{1,20}"
+    			title="Enter at most 20 alpha characters"
+            >
+        </p>
+
+        <p>
+            <label for="date_of_birth">Date of Birth</label>
+            <input
+                type="date"
+                name="date_of_birth"
+                id="date_of_birth"
+                size="10"
+                required="required"
+            >
+        </p>
+
+        <legend>Gender</legend>
+        <p>
+            <label for="male" >Male</label> 
+            <input type="radio" id="male" name="gender" value="male" required="required">
+        
+            <label for="female">Female</label> 
+            <input type="radio" id="female" name="gender" value="female">
+        
+            <label for="unknown_gender">Rather not say</label> 
+            <input type="radio" id="unknown_gender" name="gender" value="unknown_gender">
+        </p>
+    </fieldset>
+
+    <fieldset>
+        <legend>Residence</legend>
+        <p>
+            <label for="street_address">Street Address</label>
+            <br>
+            <textarea 
+                id="street_address" 
+                name="street_address" 
+                rows="4" 
+                cols="40" 
+                placeholder="Street address goes here..."
+                required="required"
+            ></textarea>
+        </p>
+        <p>
+            <label for="suburb_town">Suburb / Town</label>
+            <br>
+            <textarea 
+                id="suburb_town" 
+                name="suburb_town" 
+                rows="4" 
+                cols="40" 
+                placeholder="Suburb or Town goes here..."
+                required="required"
+            ></textarea>
+        </p>
+        <p>
+            <label for="state">State</label> 
+            <select name="state" id="state" required="required">
+                <option value="" selected >Please Select</option>
+                <option value="VIC" >VIC</option>
+                <option value="NSW" >NSW</option>	
+                <option value="QLD" >QLD</option>
+                <option value="NT"  >NT</option>
+                <option value="WA"  >WA</option>
+                <option value="SA"  >SA</option>
+                <option value="TAS" >TAS</option>
+                <option value="ACT" >ACT</option>
+            </select>
+        </p>
+        <p>
+            <label for="postcode">Postcode</label>
+            <input
+                type="text"
+                name="postcode"
+                id="postcode"
+                size="5"
+                required="required"
+                pattern="[0-9]{4}"
+    			title="Enter exactly 4 digits"
+            >
+        </p>
+
+    </fieldset>
+
+    <fieldset>
+        <legend>Contacts</legend>
+        <p>
+            <label for="email">Email</label>
+            <input
+                type="email"
+                name="email"
+                id="email"
+                size="20"
+                required="required"
+            >
+        </p>
+
+        <p>
+            <label for="phone_number">Phone Number</label>
+            <input
+                type="text"
+                name="phone_number"
+                id="phone_number"
+                size="13"
+                required="required"
+                pattern="[0-9]{8,12}"
+    			title="Enter a phone number between 8 to 12 digits, without dashes ( - )"
+            >
+        </p>
+    </fieldset>
+
+    <fieldset>
+        <legend>Skill</legend>
+        <p>
+            <label for="html">HTML</label> 
+            <input type="checkbox" id="html" name="skill[]" value="html" checked="checked">
+        
+            <label for="css">CSS</label> 
+            <input type="checkbox" id="css" name="skill[]" value="css">
+        
+            <label for="javascript">JavaScript</label> 
+            <input type="checkbox" id="javascript" name="skill[]" value="javascript">
+        
+            <label for="php">PHP</label> 
+            <input type="checkbox" id="php" name="skill[]" value="php">
+        
+            <label for="mysql">MySQL</label> 
+            <input type="checkbox" id="mysql" name="skill[]" value="mysql">
+
+            <label for="mysql">Other skills...</label> 
+            <input type="checkbox" id="other_skills" name="skill[]" value="other_skills">
+		</p>
+
+        <p>
+            <textarea 
+                id="other_skill" 
+                name="other_skill" 
+                rows="4" 
+                cols="40" 
+                placeholder="(OPTIONAL) Other skills goes here..."
+            ></textarea>
+        </p>
+    </fieldset>
+
+    <input type= "submit" value="Submit">
+	<input type= "reset" value="Reset Form">
+</form>
+
+
+
+
+</body>
