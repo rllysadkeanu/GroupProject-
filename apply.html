@@ -1,23 +1,47 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="utf-8" >
-  <meta name="description" content="Job application page." >
-  <meta name="keywords" content="Job" >
-  <meta name="author" content="Some Company"  >
-  <title>Nameless Company</title>
-
+    <meta charset="utf-8" >
+    <meta name="description" content="Job application page." >
+    <meta name="keywords" content="Job" >
+    <meta name="author" content="Some Company"  >
+    <title>Nameless Company</title>
+    <link rel="stylesheet" href="styles/style.css">
+    <link rel="stylesheet" href="styles/apply.css">
 </head>
 
 <body>
-    <h1>Title</h1>
-    <p>A paragraph</p>
 
-<form method="post" action="https://mercury.swin.edu.au/it000000/formtest.php">
+<header class="top-header">
+    <div class="logo-container">
+        <img src="styles/Gemini_Generated_Image_w46ji5w46ji5w46j-removebg-preview.png" alt="Prius Logo">
+    </div>
+    <div class="header-text">
+        <h1>PRIUS</h1>
+        <p>Enhancing our Digital Lifestyle</p>
+    </div>
+</header>
+
+<section class="hero">
+        
+        <nav class="navbar">
+            <a href="#">Home</a> |
+            <a href="#">Our Services</a> |
+            <a href="#">Job Openings</a> |
+            <a href="#">Join Us</a> |
+            <a href="#">About E.A.</a>
+        </nav>
+
+
+</section>
+
+<form class="apply-form" method="post" action="https://mercury.swin.edu.au/it000000/formtest.php">
+    <h2>PRIUS Online Application Form</h2>
     <fieldset>
-        <legend>Section 1</legend>
+        <legend></legend>
         <p>
-            <label for="job_reference_number">Job reference number</label>
+            <label for="job_reference_number" id="job_reference_number">Job reference number</label>
+            <br>
             <input
                 type="text"
                 name="job_reference_number"
@@ -162,22 +186,19 @@
     <fieldset>
         <legend>Skill</legend>
         <p>
-            <label for="html">HTML</label> 
-            <input type="checkbox" id="html" name="skill[]" value="html" checked="checked">
+            <label for="web_development">Web Development</label> 
+            <input type="checkbox" id="web_development" name="skill[]" value="web_development" checked="checked">
         
-            <label for="css">CSS</label> 
-            <input type="checkbox" id="css" name="skill[]" value="css">
+            <label for="data_analytics">Data Analytics</label> 
+            <input type="checkbox" id="data_analytics" name="skill[]" value="data_analytics">
         
-            <label for="javascript">JavaScript</label> 
-            <input type="checkbox" id="javascript" name="skill[]" value="javascript">
+            <label for="accounting">Accounting</label> 
+            <input type="checkbox" id="accounting" name="skill[]" value="accounting">
         
-            <label for="php">PHP</label> 
-            <input type="checkbox" id="php" name="skill[]" value="php">
-        
-            <label for="mysql">MySQL</label> 
-            <input type="checkbox" id="mysql" name="skill[]" value="mysql">
+            <label for="project_management">Project Management</label> 
+            <input type="checkbox" id="project_management" name="skill[]" value="project_management">
 
-            <label for="mysql">Other skills...</label> 
+            <label for="other_skills">Other skills...</label> 
             <input type="checkbox" id="other_skills" name="skill[]" value="other_skills">
 		</p>
 
