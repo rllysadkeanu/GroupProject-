@@ -106,13 +106,6 @@ body {
 .hero-content p {
     font-size: 1.4rem;
     margin-bottom: 15px;
-    text-align: left; /* Aligning left based on your image */
+    text-align: center; /* Aligning left based on your image */
     text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.8);
-}
-
-/* Dashed Divider Lines */
-.dashed-line {
-    border: none;
-    border-top: 2px dashed rgba(255, 255, 255, 0.8);
-    margin: 20px 0;
 }
