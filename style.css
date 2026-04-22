@@ -1,0 +1,112 @@
+/* CSS Reset & Global Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background-color: #f4f4f4;
+}
+
+/* Top Header Section */
+.top-header {
+    display: flex;
+    align-items: center;
+    background-color: #d1f3f4; /* Light cyan matching your mockup */
+    padding: 15px 50px;
+}
+
+.logo-container img {
+    height: 60px; /* Adjust based on your logo size */
+    margin-right: 30px;
+}
+
+.header-text h1 {
+    color: #003399; /* Bold blue matching the Prius text */
+    font-size: 2.8rem;
+    font-weight: 700;
+    letter-spacing: 1px;
+    margin-bottom: 5px;
+    text-transform: uppercase;
+}
+
+.header-text p {
+    color: #333;
+    font-size: 1.3rem;
+}
+
+/* Hero Image Section */
+.hero {
+    position: relative;
+    width: 100%;
+    height: 80vh;
+    min-height: 600px;
+    /* Replace with your exact background image file name */
+    background-image: url("Gemini_Generated_Image_enreefenreefenre.png"); 
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+/* Navigation Bar Over Image */
+.navbar {
+    text-align: center;
+    padding: 20px 0;
+    color: white;
+    font-size: 1.3rem;
+    /* Slight dark gradient at the top to make white text pop */
+    background: linear-gradient(to bottom, rgba(0,0,0,0.5) 0%, rgba(0,0,0,0) 100%);
+}
+
+.navbar a {
+    color: white;
+    text-decoration: none;
+    margin: 0 15px;
+    transition: opacity 0.3s ease;
+}
+
+.navbar a:hover {
+    opacity: 0.8;
+    text-decoration: underline;
+}
+
+/* Center Content Overlay */
+.hero-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: white;
+    width: 80%;
+    max-width: 900px;
+    /* Semi-transparent box to match your mockup */
+    background-color: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(3px); /* Optional: Adds a slight glass blur effect */
+    padding: 40px;
+    border-radius: 8px;
+}
+
+.hero-content h2 {
+    font-size: 2.2rem;
+    font-weight: normal;
+    margin-bottom: 10px;
+    text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.8);
+}
+
+.hero-content h3 {
+    font-size: 1.8rem;
+    font-weight: normal;
+    margin-bottom: 30px;
+    text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.8);
+}
+
+.hero-content p {
+    font-size: 1.4rem;
+    margin-bottom: 15px;
+    text-align: center; /* Aligning left based on your image */
+    text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.8);
+}
+
