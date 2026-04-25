@@ -1,0 +1,143 @@
+/* HEADER CONTAINER */
+header {
+  position: relative;
+  height: 600px;
+  color: white;
+  overflow: hidden;
+}
+
+/* BACKGROUND IMAGE */
+header::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: url("Gemini_Generated_Image_enreefenreefenre.png") center/cover no-repeat;
+  z-index: 0;
+}
+
+/* TOP BAR (LIGHT BLUE STRIP) */
+.header-top {
+  position: relative;
+  z-index: 2;
+  background: #b7d3d4;
+  display: flex;
+  align-items: center;
+  padding: 15px 30px;
+}
+
+/* LOGO */
+.header-top img {
+  width: 40px;
+  margin-right: 10px;
+}
+
+/* TITLE */
+.header-title {
+  display: flex;
+  flex-direction: column;
+}
+
+.header-title h1 {
+  font-size: 2rem;
+  color: #1b3f8b;
+  margin: 0;
+}
+
+.header-title p {
+  font-size: 0.9rem;
+  color: #333;
+}
+
+/* NAVIGATION (OVER IMAGE) */
+nav {
+  position: absolute;
+  top: 100px;
+  width: 100%;
+  text-align: center;
+  z-index: 2;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  margin: 0 15px;
+  font-size: 1rem;
+  font-weight: 500;
+}
+
+nav a:hover {
+  text-decoration: underline;
+}
+
+/* OPTIONAL: add slight overlay for readability */
+.header-overlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(0,0,0,0.2);
+  z-index: 1;
+}
+/* ASIDE */
+aside {
+  background: #0b3d6d;
+  color: white;
+  padding: 20px;
+  margin: 20px;
+  border-radius: 10px;
+}
+
+aside h2 {
+  margin-bottom: 10px;
+}
+
+/* MAIN LAYOUT */
+main {
+  padding: 20px;
+}
+
+/* JOB SECTIONS */
+section {
+  background: white;
+  margin-bottom: 20px;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.08);
+}
+
+/* HEADINGS */
+h2 {
+  color: #0b3d6d;
+  margin-bottom: 10px;
+}
+
+h3 {
+  margin-top: 10px;
+  color: #145da0;
+}
+
+h4 {
+  margin-top: 10px;
+  color: #333;
+}
+
+/* LISTS */
+ul, ol {
+  margin-left: 20px;
+  margin-top: 10px;
+}
+
+/* RESPONSIVE */
+@media (max-width: 768px) {
+  header {
+    height: 300px;
+    padding: 15px;
+  }
+
+  header h1 {
+    font-size: 1.6rem;
+  }
+
+  header::before {
+    width: 120px;
+    height: 60px;
+  }
+}
