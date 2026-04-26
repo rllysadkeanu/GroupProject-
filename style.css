@@ -110,44 +110,7 @@ body {
     text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.8);
 }
 
-.info-section {
-    margin-bottom: 30px;
-    border-bottom: 1px dashed #ccc;
-    padding-bottom: 25px;
-}
 
-.info-section h2 {
-    color: #003399; /* Matches logo blue */
-    margin-bottom: 15px;
-    text-align: left;
-}
-
-/* List Styling */
-.info-section ul {
-    margin-left: 25px;
-    line-height: 1.8;
-}
-
-/* Definition List (Team Members) Styling */
-.info-section dl {
-    line-height: 1.6;
-}
-
-.info-section dt {
-    font-weight: bold;
-    color: #003399;
-    margin-top: 15px;
-    font-size: 1.1rem;
-}
-
-.info-section dd {
-    margin-left: 0;
-    margin-bottom: 15px;
-    background-color: #fafafa; /* Light gray to match form fields */
-    padding: 15px;
-    border: 1px solid #000000; /* Black outline */
-    border-radius: 4px;
-}
 
 /* Table Styles */
 table {
