@@ -8,7 +8,7 @@
     <title>Prius - Enhancing our Digital Lifestyle</title>
     <link rel="stylesheet" href="styles/style.css">
     <link rel="stylesheet" href="styles/apply.css">
-
+    <link rel="stylesheet" href="styles/footer.css">
 </head>
 
 <body>
@@ -37,8 +37,7 @@
         
         <div class="row-threes">
             <fieldset id="job_reference_number">
-                <label for="job_reference_number">Job reference number</label>
-                <br>
+                <legend for="job_reference_number">Job reference number</legend>
                 <input 
                     type="text" 
                     name="job_reference_number" 
@@ -50,7 +49,7 @@
             </fieldset>
             
             <fieldset id="first_name">
-                <label for="first_name">First Name</label>
+                <legend for="first_name">First Name</legend>
                 <input 
                     type="text" 
                     name="first_name" 
@@ -62,7 +61,7 @@
             </fieldset>
             
             <fieldset id="last_name">
-                <label for="last_name">Last Name</label>
+                <legend for="last_name">Last Name</legend>
                 <input 
                     type="text" 
                     name="last_name" 
@@ -76,15 +75,22 @@
         
         <div class="row-half">        
             <fieldset id="date_of_birth">
-                <label for="date_of_birth">Date of Birth</label>
-                <input type="date" name="date_of_birth" id="date_of_birth" required="required">
+                <legend for="date_of_birth">Date of Birth</legend>
+                <input 
+                    type="date" 
+                    title="date_of_birth"
+                    name="date_of_birth" 
+                    id="date_of_birth" 
+                    required="required"
+                >
             </fieldset>
             
             <div>
                 
-                <label>Gender</label>
                 <fieldset id="gender">
+                    <legend>Gender</legend>
                     <p>
+                        
                         <input type="radio" id="male" name="gender" value="male" required="required">
                         <label for="male">Male</label> 
 
@@ -102,8 +108,7 @@
         <div class="row-half">
             <fieldset id="street_address">
                 <p>
-                    <label for="street_address">Street Address</label>
-                    <br>
+                    <legend for="street_address">Street Address</legend>
                     <input 
                         type="text" 
                         name="street_address" 
@@ -120,8 +125,7 @@
         <div class="row-threes">
             <fieldset id="suburb_town">
                 <p>
-                    <label for="suburb_town">Suburb / Town</label> 
-                    <br>
+                    <legend for="suburb_town">Suburb / Town</legend> 
                     <input 
                         type="text" 
                         name="suburb_town" 
@@ -135,8 +139,7 @@
 
             <fieldset id="state">
                 <p>
-                    <label for="state">State</label> 
-                    <br>
+                    <legend for="state">State</legend> 
                     <select name="state" id="state" required="required">
                         <option value="" selected>Please Select</option>
                         <option value="VIC">VIC</option>
@@ -153,8 +156,7 @@
 
             <fieldset id="postcode">
                 <p>
-                    <label for="postcode">Postcode</label>
-                    <br>
+                    <legend for="postcode">Postcode</legend>
                     <input type="text" name="postcode" id="postcode" required="required" pattern="[0-9]{4}" title="Enter exactly 4 digits">
                 </p>
             </fieldset>
@@ -165,16 +167,19 @@
 
             <fieldset id="email">
                 <p>
-                    <label for="email">Email</label>
-                    <br>
-                    <input type="email" name="email" id="email" required="required">
+                    <legend for="email">Email</legend>
+                    <input 
+                        type="email" 
+                        name="email" 
+                        id="email"
+                        title="email" 
+                        required="required">
                 </p>
             </fieldset>
 
             <fieldset id="phone_number">
                 <p>
-                    <label for="phone_number">Phone Number</label>
-                    <br>
+                    <legend for="phone_number">Phone Number</legend>
                     <input type="text" name="phone_number" id="phone_number" required="required" pattern="[0-9]{8,12}" title="Enter a phone number between 8 to 12 digits, without dashes ( - )">
                 </p>
             </fieldset>
@@ -184,7 +189,7 @@
         <div class="row-skill">
             <fieldset id="skill">
                 <p>
-                    <label>Skill list</label>
+                    <legend>Skill list</legend>
                 </p>
                 <p>
                     <input type="checkbox" id="web_development" name="skill[]" value="web_development" checked="checked">
@@ -213,11 +218,11 @@
             </fieldset>
                 
             <fieldset id="other_skill">
-                <label>Other skills</label>
-                <br>
+                <legend for="other_skill">Other skills</legend>
                 <textarea 
                     id="other_skill" 
                     name="other_skill" 
+                    title="other_skill"
                     rows="9" 
                     placeholder="(OPTIONAL) Other skills goes here..."
                 ></textarea>
@@ -233,9 +238,9 @@
         
     </form>
 
-    <footer style="background-color: #003399; color: white; text-align: center; padding: 20px; font-size: 0.95rem; width: 100%;">
-        <p style="margin: 0 0 10px 0;">&copy; 2026 Prius - Government IT Services. All Rights Reserved.</p>
-        <p style="margin: 0;">
+    <footer class="page_footer">
+        <p>&copy; 2026 Prius - Government IT Services. All Rights Reserved.</p>
+        <p>
             <a href="https://cos10026wm.atlassian.net/jira/software/projects/GROUP/boards/34?atlOrigin=eyJpIjoiZTRjOWE0MDNjZTk0NDYyMWE3NGNkM2RlM2RlMTA2NjEiLCJwIjoiaiJ9" style="color: #d1f3f4; text-decoration: none; margin: 0 10px;">Jira Board</a> | 
             <a href="https://github.com/rllysadkeanu/GroupProject-" style="color: #d1f3f4; text-decoration: none; margin: 0 10px;">GitHub Repository</a> | 
             <a href="mailto:info@prius.com" style="color: #d1f3f4; text-decoration: none; margin: 0 10px;">info@prius.com</a>

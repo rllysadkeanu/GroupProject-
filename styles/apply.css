@@ -6,7 +6,7 @@ textarea,
 select {
     width: 100%;
     padding: 8px;
-    margin-top: 4px;
+    margin-top: 0px;
     margin-bottom: 10px;
     box-sizing: border-box;
     border: 1px solid #ccc;
@@ -118,7 +118,7 @@ textarea {
 
 }
 
-#gender p label {
+#gender p legend {
     width: auto;
     margin: 0;
 }
@@ -165,7 +165,7 @@ fieldset {
     border: 0;
 }
 
-fieldset p label,
+fieldset p legend,
 fieldset p input[type="radio"],
 fieldset p input[type="checkbox"] {
     width: auto;
@@ -177,8 +177,8 @@ fieldset p input[type="checkbox"] {
 }
 
 
-div fieldset label:first-child,
-div div label:first-child {
+div fieldset legend:first-child,
+div div legend:first-child {
     font-weight:600 ;
     color: #0747c5;
 }
