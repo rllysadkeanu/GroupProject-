@@ -15,14 +15,13 @@ header::after {
   z-index: 0;
 }
 
-/* TOP BAR (LIGHT BLUE STRIP) */
 .header-top {
   position: relative;
   z-index: 2;
-  background: #b7d3d4;
+    background-color: #d1f3f4; /* Light cyan matching your mockup */
   display: flex;
   align-items: center;
-  padding: 15px 30px;
+  padding: 15px 50px;
 }
 
 /* LOGO */
@@ -39,7 +38,7 @@ header::after {
 
 .header-title h1 {
   font-size: 2rem;
-  color: #1b3f8b;
+  color: #164597;
   margin: 0;
 }
 
@@ -58,10 +57,10 @@ nav {
 }
 
 nav a {
-  color: white;
+  color: rgb(255, 255, 255);
   text-decoration: none;
   margin: 0 15px;
-  font-size: 1rem;
+  font-size: 1.5rem;
   font-weight: 500;
 }
 
@@ -69,7 +68,6 @@ nav a:hover {
   text-decoration: underline;
 }
 
-/* OPTIONAL: add slight overlay for readability */
 .header-overlay {
   position: absolute;
   inset: 0;
@@ -78,7 +76,7 @@ nav a:hover {
 }
 /* ASIDE */
 aside {
-  background: #0b3d6d;
+  background: #2a6ea1;
   color: white;
   padding: 20px;
   margin: 20px;
